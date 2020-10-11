@@ -1,9 +1,29 @@
+:root{
+    --animation-time: 700ms;
+}
+
 .card{
     margin: 2rem;
 }
 .card:hover{
+    animation-name: wave;
+    animation-duration: var(--animation-time);
+    animation-timing-function: ease-in;
+    /**animation-fill-mode: forwards;
+    transform: scale(0);**/
+
     background-color: #e3f2fd;;
     color: rgb(76, 150, 150);
     font-size: larger;
 }
+
+@keyframes wave {
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+}
+
 
