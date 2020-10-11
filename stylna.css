@@ -1,5 +1,9 @@
-.navigation
-{
-display = inline-block
+.card{
+    margin: 2rem;
+}
+.card:hover{
+    background-color: #e3f2fd;;
+    color: rgb(76, 150, 150);
+    font-size: larger;
 }
 
